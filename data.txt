@@ -1,0 +1,9 @@
+
+add 3 2
+subtract 5 3
+multiply 2 4
+divide 6 2
+mod 3 2
+square 5
+cube 3
+
