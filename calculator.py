@@ -39,7 +39,8 @@ for line in file_name:
       break
 
     elif tokens[0] == 'subtract':
-      print(subtract(num1 = float(tokens[1]), num2 = float(tokens[2])))
+      print("{:.5f}".format(subtract(tokens[1],tokens[2])))
+        #subtract(num1 = float(tokens[1])f"{:.2f}", num2 = float(tokens[2])))
       break
 
     elif tokens[0] == 'multiply':
