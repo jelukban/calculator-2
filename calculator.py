@@ -12,6 +12,21 @@ file_name = open("data2.txt")
 for line in file_name:
   line = line.rstrip()
   tokens = line.split(' ')
+
+  try:
+    tokens[1] = float(tokens[1])
+  except   ValueError:
+    print("This is a not entry")
+    continue
+
+  try:
+    tokens[2] = float(tokens[2])
+  except   ValueError:
+    print("This is a not entry")
+    continue
+  except IndexError:
+    continue
+
   # print(tokens)
 
   while True:
